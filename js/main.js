@@ -30,35 +30,7 @@ function updatePrescriptionDOM(event){
     const presentacion = farmacos[farmaco]['presentacion'].filter( v => v.name === presentacionElement.value)[0]
 
     const receta = calcReceta(farmaco, pesoKg, presentacion, dosis)
+    respuesta.innerText = `${receta[0]} ~${Math.round(receta[0])} ${receta[1]}`
 
 }
 
-function calcReceta(farmaco, pesoKg, presentacion, dosis){
-    
-    const monto = dosis.ammount * pesoKg / presentacion.ammount
-    
-    console.log(presentacion)
-
-    const unit = {
-        'Kg': 1,
-        'mg': 0,
-        'ml': 0,
-    }
-    dosis.units.split(' ').forEach(function(v){
-        modifyUnits(v, unit, 1)
-    });
-    presentacion.units.split(' ').forEach(function(v){
-        modifyUnits(v, unit, -1)
-    });
-
-    console.log(unit)
-}
-function modifyUnits(v, unit, divide){
-    let modifier = divide;
-    if(v[0]==='/'){
-        modifier *= -1;
-        v = v.slice(1);
-    }
-    if(unit.hasOwnProperty(v)) { unit[v]+= modifier }
-    else unit[v] = modifier
-}
