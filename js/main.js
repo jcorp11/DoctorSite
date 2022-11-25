@@ -30,7 +30,8 @@ function updatePrescriptionDOM(event){
     const presentacion = farmacos[farmaco]['presentacion'].filter( v => v.name === presentacionElement.value)[0]
 
     const receta = calcReceta(farmaco, pesoKg, presentacion, dosis)
-    respuesta.innerText = `${receta[0]} ~${Math.round(receta[0])} ${receta[1]}`
-
+    respuesta.innerText = `${receta[0]} ~ ${Math.ceil(receta[0])} ${receta[1]}`
+    dataFarmaco.innerText =  `Farmaco: ${farmaco.charAt(0).toUpperCase() + farmaco.slice(1)}`
+    dataDosis.innerText = `Dosis: ${dosis.ammount} ${dosis.units.replace(/\s/g,'')}`
 }
 

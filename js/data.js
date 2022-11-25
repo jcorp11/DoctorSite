@@ -21,6 +21,14 @@ const farmacos = {
         ],
         dosis: {ammount: 15, units: 'mg /Kg /dosis'} 
     },
+    diclofenaco: {
+        presentacion: [
+            {name: 'Supositorio: 12.5mg', ammount: 12.5, units: 'mg' },
+            {name: 'Supositorio: 50mg', ammount: 50, units: 'mg' },
+            {name: 'Gotas: 15 mg/ml (1xKg)', ammount: 15, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 10, units: 'mg /Kg /dosis'} 
+    },
 
 
 }
