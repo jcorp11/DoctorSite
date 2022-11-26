@@ -29,7 +29,17 @@ const farmacos = {
         ],
         dosis: {ammount: 10, units: 'mg /Kg /dosis'} 
     },
+    amoxicilina: {
+        presentacion: [
+            {name: 'Capsulas: 500mg', ammount: 500, units: 'mg' },
+            {name: 'Comprimidos: 750mg', ammount: 750, units: 'mg' },
+            {name: 'Suspension oral 125 mg/5ml', ammount: 125/5, units: 'mg /ml' },
+            {name: 'Suspension oral 250 mg/5ml', ammount: 250/5, units: 'mg /ml' },
+            {name: 'Suspension oral 500 mg/5ml', ammount: 500/5, units: 'mg /ml' },
 
+        ],
+        dosis: {ammount: 40, units: 'mg /Kg /dosis'} 
+    },
 
 }
 

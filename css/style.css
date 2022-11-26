@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    /* font-size: 62.5%; */
 }
 
 body{
@@ -11,9 +12,7 @@ body{
     justify-content: center;
 } 
 
-.hide{
-    display: none;
-}
+
 
 .main{
     background: pink;
@@ -28,16 +27,16 @@ body{
 .main > h3{
     display: inline-block;
     border: 3px solid white;
-    text-shadow: 1px -1px rgb(219, 72, 114),
+    /* text-shadow: 1px -1px rgb(219, 72, 114),
                 -1px 1px rgb(219, 72, 114),
                 -1px -1px rgb(219, 72, 114),
                 1px 1px rgb(219, 72, 114),
                 0px 1px rgb(219, 72, 114),
                 0px -1px rgb(219, 72, 114),
                 1px 0px rgb(219, 72, 114),
-                -1px 0px rgb(219, 72, 114);
-
-    color: rgb(236, 177, 177);
+                -1px 0px rgb(219, 72, 114); */
+    /* -webkit-text-stroke: 1px rgb(219, 72, 114); */
+    color: rgb(219, 72, 114);
     
     border-radius: 3px;
     padding: 10px 5px;
@@ -73,7 +72,14 @@ select, #kilos{
 #calcularBtn{
     display: block;
     margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 12px;
+    background: rgb(219, 72, 114);
+    color: white;
 
+}
+#calcularBtn:hover{
+    cursor:pointer;
 }
 
 .answer{
@@ -88,6 +94,21 @@ select, #kilos{
 
 .data{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+#respuesta{
+    border: 3px solid white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    /* font-size: 60px; */
+    /* -webkit-text-strokse: 1px black; */
+
+}
+
+.hide{
+    display: none;
 }

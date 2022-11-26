@@ -15,8 +15,6 @@ function getPresentacion(event){
 function calcReceta(farmaco, pesoKg, presentacion, dosis){
     
     const monto = DecimalPrecision.round( dosis.ammount * pesoKg / presentacion.ammount,2)
-    
-    console.log(presentacion)
 
     let unidades = {
         'Kg': 1,
