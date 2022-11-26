@@ -60,7 +60,13 @@ label{
     height: 23px;
     border: 1px solid black;
     border-radius: 1px;
+    line-height: 23px;
 }
+
+label, select, #kilos{
+    font-size: 0.8rem;
+}
+
 select, #kilos{
     width: calc(50%);
     display: inline-block;

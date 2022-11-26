@@ -1,6 +1,5 @@
 function getPresentacion(event){
     const farmaco = event.target.value.toLowerCase()
-    // console.log(farmaco) 
     presentacionElement.innerHTML = '<option value="false">presentacion ?</option>'
     const presen = farmacos[farmaco]['presentacion']
     presen.forEach( v =>{
