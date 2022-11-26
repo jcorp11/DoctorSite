@@ -55,6 +55,27 @@ const farmacos = {
         ],
         dosis: {ammount: 10, units: 'mg /Kg /dia'} 
     },
+    furosemida: {
+        presentacion: [
+            {name: 'Comprimidos: 40mg', ammount: 40, units: 'mg' },
+            {name: 'Inyectable: 20mg/2ml', ammount: 20/2, units: 'mg' },
+        ],
+        dosis: {ammount: 1.5, units: 'mg /Kg /dosis'} 
+    },
+    nifedipino: {
+        presentacion: [
+            {name: 'Comprimidos: 20mg', ammount: 20, units: 'mg' },
+        ],
+        dosis: {ammount: 0.35, units: 'mg /Kg /dosis'} 
+    },
+    eritromicina: {
+        presentacion: [
+            {name: 'Comprimidos: 200mg', ammount: 200, units: 'mg' },
+            {name: 'Comprimidos: 500mg', ammount: 500, units: 'mg' },
+            {name: 'Suspension Oral: 200mg/5ml', ammount: 200/5, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 40, units: 'mg /Kg /dosis'} 
+    },
 
 }
 
