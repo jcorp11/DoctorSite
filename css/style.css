@@ -102,6 +102,15 @@ select, #kilos{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
+    
+}
+#dosisInput{
+    width: 50px;
+
+}
+
+.data span{
+    line-height: 23px;    
 }
 
 #respuesta{

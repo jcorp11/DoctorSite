@@ -76,6 +76,13 @@ const farmacos = {
         ],
         dosis: {ammount: 40, units: 'mg /Kg /dosis'} 
     },
-
+    claritromicina: {
+        presentacion: [
+            {name: 'Comprimidos: 500mg', ammount: 500, units: 'mg' },
+            {name: 'Suspension Oral: 125mg/5ml', ammount: 125/5, units: 'mg /ml' },
+            {name: 'Suspension Oral: 250mg/5ml', ammount: 250/5, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 15, units: 'mg /Kg /dia'} 
+    },
 }
 

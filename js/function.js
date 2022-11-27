@@ -9,6 +9,7 @@ function getPresentacion(event){
         presentacionElement.appendChild(opt)
 
     } )
+    dosisInput.value = farmacos[farmaco].dosis.ammount
 }
 
 function calcReceta(farmaco, pesoKg, presentacion, dosis){

@@ -26,8 +26,8 @@
                   <option value="Nifedipino">Nifedipino</option>
                   <!-- <option value="Penicilina">Penicilina</option> -->
                   <option value="Eritromicina">Eritromicina</option>
-                  <!-- <option value="Claritromicina">Claritromicina</option>
-                  <option value="Cotrimoxazol">Cotrimoxazol</option>
+                  <option value="Claritromicina">Claritromicina</option>
+                  <!-- <option value="Cotrimoxazol">Cotrimoxazol</option>
                   <option value="Dexametasona">Dexametasona</option>
                   <option value="Betametasona">Betametasona</option>
                   <option value="Prednisona">Prednisona</option>
@@ -64,10 +64,13 @@
         <section class="answer hide">
             <section>
                 <h3 id="respuesta"></h3>
-                <section class="data">
-                    <!-- <span id="dataFarmaco"></span> -->
-                    <span id="dataDosis"></span>
-                    <!-- <span id="dataPresentacion"></span> -->
+                <section class="data hide">
+
+                    <span>Dosis:&nbsp;</span>
+                    <!-- <input type="number" name="dosis" id="dosisInput" required="required">  -->
+                    <input id="dosisInput" required="required" name="dosis" type="number" oninput="this.style.width = (this.value.length + 3) + 'ch';">
+                    <span id="dataUnits"></span>
+
                 </section>
             </section>
         </section>

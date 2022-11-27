@@ -10,7 +10,8 @@ const calcButton = document.querySelector('#calcularBtn')
 const answer = document.querySelector('.answer')
 const respuesta = document.querySelector('#respuesta')
 const dataFarmaco = document.querySelector('#dataFarmaco')
-const dataDosis = document.querySelector('#dataDosis')
+const dataUnits = document.querySelector('#dataUnits')
+const dosisInput = document.querySelector('#dosisInput')
 
 farmacoElement.addEventListener('change',getPresentacion, false)
 calcButton.addEventListener('click', updatePrescriptionDOM, false)
@@ -28,7 +29,8 @@ function updatePrescriptionDOM(event){
         return
     }
 
-    const dosis = farmacos[farmaco].dosis
+    const dosisDefault = farmacos[farmaco].dosis.ammount
+    const dosisUnidades = farmacos[farmaco].dosis.units
     const presentacion = farmacos[farmaco]['presentacion'].filter( v => v.name === presentacionElement.value)[0]
 
     if(!presentacion){
@@ -40,14 +42,20 @@ function updatePrescriptionDOM(event){
         respuesta.innerText = 'Debes ingresar un Peso'
         return
     }
+    if(!dosisInput.value){
+        dosisInput.value = dosisDefault
+    }
 
     const pesoKg = pesoElement.value
-
+    let dosis = {
+        ammount: dosisInput.value,
+        units: dosisUnidades
+    }
     const receta = calcReceta(farmaco, pesoKg, presentacion, dosis)
     respuesta.innerText = `${receta[0]} ~ ${Math.ceil(receta[0])} ${receta[1]}`
-    // dataFarmaco.innerText =  `Farmaco: ${farmaco.charAt(0).toUpperCase() + farmaco.slice(1)}`
-    dataDosis.innerText = `Dosis: ${dosis.ammount} ${dosis.units.replace(/\s/g,'')}`;
+    dataUnits.innerHTML = "&nbsp;" +`${dosis.units.replace(/\s/g,'')}`;
 
+    document.querySelector('.data.hide').classList.remove('hide')
     
 }
 
