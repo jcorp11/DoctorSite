@@ -84,5 +84,31 @@ const farmacos = {
         ],
         dosis: {ammount: 15, units: 'mg /Kg /dia'} 
     },
+    cotrimoxazol: {
+        presentacion: [
+            {name: 'Comprimidos: 400mg', ammount: 400, units: 'mg' },
+            {name: 'Comprimidos: 80mg', ammount: 80, units: 'mg' },
+        ],
+        dosis: {ammount: 40, units: 'mg /Kg /dia'} 
+    },
+    dexametasona: {
+        presentacion: [
+            {name: 'Inyectable: 4mg/ml', ammount: 4, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 0.3, units: 'mg /Kg /dosis'} 
+    },
+    betametasona: {
+        presentacion: [
+            {name: 'Comprimidos: 2mg', ammount: 2, units: 'mg' },
+            {name: 'Inyectable: 4mg/ml', ammount: 4, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 0.4, units: 'mg /Kg /dosis'} 
+    },
+    prednisona: {
+        presentacion: [
+            {name: 'Suspension Oral: 20mg/5ml', ammount: 2, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 1.5, units: 'mg /Kg /dosis'} 
+    },
 }
 
