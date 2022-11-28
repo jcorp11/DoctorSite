@@ -106,9 +106,28 @@ const farmacos = {
     },
     prednisona: {
         presentacion: [
-            {name: 'Suspension Oral: 20mg/5ml', ammount: 2, units: 'mg /ml' },
+            {name: 'Suspension Oral: 20mg/5ml', ammount: 20/5, units: 'mg /ml' },
         ],
         dosis: {ammount: 1.5, units: 'mg /Kg /dosis'} 
+    },
+    hidrocortisona: {
+        presentacion: [
+            {name: 'Comprimidos: 20mg', ammount: 20, units: 'mg' },
+        ],
+        dosis: {ammount: 10, units: 'mg /Kg /dosis'} 
+    },
+    cefadroxilo: {
+        presentacion: [
+            {name: 'Comprimidos: 500mg', ammount: 500, units: 'mg' },
+            {name: 'Suspension Oral: 250mg/5ml', ammount: 250/5, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 30/2, units: 'mg /Kg /dosis /dia'} 
+    },
+    amikacina: {
+        presentacion: [
+            {name: 'Inyectable: 500mg/2ml', ammount: 500/2, units: 'mg /ml' },
+        ],
+        dosis: {ammount: 15, units: 'mg /Kg /dia'} 
     },
 }
 
