@@ -141,3 +141,15 @@ function updatePrescriptionDOM(event){
     document.querySelector('.data.hide').classList.remove('hide')
     
 }
+
+const farmaList = function(){
+    const farma = Object.keys(farmacos).sort( (a,b)=> a.localeCompare(b))
+    farma.forEach(v=>{
+        let str = v[0].toUpperCase() + v.substring(1)
+        let item = document.createElement('option')
+        item.innerText = str;
+        item.value = str;
+        farmacoElement.appendChild(item)
+    })
+    console.log(farma)
+};
