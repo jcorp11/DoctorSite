@@ -143,19 +143,19 @@ const farmacos = {
         ],
         dosis: {ammount: (50+25)/2, units: 'mg /Kg /dosis'} 
     },
-    domperidona: {
-        presentacion: [
-            {name: 'Comprimidos: 10mg', ammount: 10, units: 'mg' },
-            {name: 'Gotas: 10mg/ml (1xKg)', ammount: 10, units: 'mg /ml' },
-        ],
-        dosis: {ammount: '', units: 'mg /Kg /dosis'} 
-    },
-    pargeverina: {
-        presentacion: [
-            {name: 'Gotas: 5mg/ml', ammount: 10, units: 'mg /ml' },
-        ],
-        dosis: {ammount: '', units: 'mg /Kg /dosis'} 
-    },
+    // domperidona: {
+    //     presentacion: [
+    //         {name: 'Comprimidos: 10mg', ammount: 10, units: 'mg' },
+    //         {name: 'Gotas: 10mg/ml (1xKg)', ammount: 10, units: 'mg /ml' },
+    //     ],
+    //     dosis: {ammount: '', units: 'mg /Kg /dosis'} 
+    // },
+    // pargeverina: {
+    //     presentacion: [
+    //         {name: 'Gotas: 5mg/ml', ammount: 10, units: 'mg /ml' },
+    //     ],
+    //     dosis: {ammount: '', units: 'mg /Kg /dosis'} 
+    // },
     cloxacilina: {
         presentacion: [
             {name: 'Comprimidos: 500mg', ammount: 500, units: 'mg' },
@@ -170,12 +170,12 @@ const farmacos = {
         ],
         dosis: {ammount: (5+7.5)/2, units: 'mg /Kg /dia'} 
     },
-    levocetericina: {
-        presentacion: [
-            {name: 'Suspension Oral: 25mg/5ml', ammount: 25/5, units: 'mg /ml' },
-        ],
-        dosis: {ammount: '', units: 'mg /Kg /dia'} 
-    },
+    // levocetericina: {
+    //     presentacion: [
+    //         {name: 'Suspension Oral: 25mg/5ml', ammount: 25/5, units: 'mg /ml' },
+    //     ],
+    //     dosis: {ammount: '', units: 'mg /Kg /dia'} 
+    // },
     clorfenamina: {
         presentacion: [
             {name: 'Suspension Oral: 2mg/5ml', ammount: 2/5, units: 'mg /ml' },
